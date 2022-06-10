@@ -1,0 +1,211 @@
+#GIT Homework 1
+#
+#JSON
+# 4. Создать внешний репозиторий c названием JSON.
+через Web
+# 5. Клонировать репозиторий JSON на локальный компьютер.
+git clone https://github.com/alnipe/JSON.git
+
+# 6. Внутри локального JSON создать файл “new.json”.
+cd JSON
+touch new.json
+
+# 7. Добавить файл под гит.
+git add new.json
+
+# 8. Закоммитить файл.
+git commit new.json -m "JSON commit"
+
+# 9. Отправить файл на внешний GitHub репозиторий.
+git push
+
+# 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+nano new.json
+{
+"name": "Alexander P",
+"age": 39,
+"pets": 0,
+"salary in $": 3000
+}
+
+# 11. Отправить изменения на внешний репозиторий.
+git commit new.json -m "Add information about me"
+git push
+
+# 12. Создать файл preferences.json
+touch preferences.json
+git add preferences.json
+
+# 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+nano preferences.json
+{
+"favorite film": "Avengers",
+"favorite tv show": "none",
+"favorite food": "meat",
+"favorite season": "winter in moutains",
+"country": "USA"
+}
+
+# 14. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+touch skills.json
+git add skills.json
+nano skills.json
+{
+  "skills":["Test theory","HTTP Methods/codes","Soap/Rest","API","Logs","Sniffers","Dev Tools","Mobile Testing","ADB/XCode","Terminal Linux","bash scripts","SQL"
+  ]
+}
+
+# 15. Отправить сразу 2 файла на внешний репозиторий.
+git commit -am "Add preferences and skills"
+git push
+
+# 16. На веб интерфейсе создать файл bug_report.json.
+# 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+# 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+{
+  "Summary": "COVID-19 page: The blank page is opened from link 'Promotion' in the footer",
+  "STR":[ "1. Open main page",
+  "2. Go to footer",
+  "3. In “Browse by Category” follow the link COVID-19",
+  "4. Go to footer COVID-19 page",
+  "5. In “Browse by Category” follow the link 'Promotion'"
+  ],
+  "Result": "The Вlank page is opened",
+  "Expected result": "The page of products with special offers is opened",
+  "Severity": "Blocker",
+  "Priority": "Medium",
+  "Environment": "Windows 10 Pro x64 Version 10.0.19044 Build 19044, Google Chrome v.98.0.4758.102 x64",
+  "Reporter": "Alex P",
+  "Atachment": "Picture"
+}
+
+# 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+# 20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+
+#XML
+# 21. Создать внешний репозиторий c названием XML.
+# 22. Клонировать репозиторий XML на локальный компьютер.
+git clone https://github.com/alnipe/XML.git
+
+# 23. Внутри локального XML создать файл “new.xml”.
+cd XML
+touch new.xml
+
+# 24. Добавить файл под гит.
+git add new.xml
+
+# 25. Закоммитить файл.
+git commit new.xml -m "Add file new.xml"
+
+# 26. Отправить файл на внешний GitHub репозиторий.
+git push
+
+# 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+nano new.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<person>
+	<name>Alexander P</name>
+	<age>39</age>
+	<pets>0</pets>
+	<salary>3000</salary>
+</person>
+
+# 28. Отправить изменения на внешний репозиторий.
+git commit new.xml -m "Update person info"
+gri push
+
+# 29. Создать файл preferences.xml
+touch preferences.xml
+git add preferences.xml
+
+
+# 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+nano preferences.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<preferences>
+	<film>Avengers</film>
+	<tv-show>none</tv-show>
+	<season>winter in moutain</season>
+	<food>meat</food>
+	<country>USA</country>
+</preferences>
+
+# 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+touch skills.xml
+nano skills.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<skills>
+	<skill>Test theory</skill>
+	<skill>HTTP Methods/codes</skill>
+	<skill>Soap/Rest</skill>
+	<skill>API</skill>
+	<skill>Logs</skill>
+	<skill>sniffers</skill>
+	<skill>Dev Tools</skill>
+	<skill>Mobile Testing</skill>
+	<skill>ADB/XCode</skill>
+	<skill>Terminal Linux</skill>
+	<skill>bash scripts</skill>
+	<skill>SQL</skill>
+</skills>
+
+# 32. Сделать коммит в одну строку.
+ git add .; git commit -am "Add preferences and skills"
+ 
+# 33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+# 34. На веб интерфейсе создать файл bug_report.xml.
+# 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+# 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+<?xml version="1.0" encoding="UTF-8" ?>
+<bug_report>
+  <Summary>COVID-19 page: The blank page is opened from link 'Promotion' in the footer</Summary>
+  <STR>1. Open main page</STR>
+  <STR>2. Go to footer</STR>
+  <STR>3. In “Browse by Category” follow the link COVID-19</STR>
+  <STR>4. Go to footer COVID-19 page</STR>
+  <STR>5. In “Browse by Category” follow the link 'Promotion'</STR>
+  <Result>The Вlank page is opened</Result>
+  <Expected_result>The page of products with special offers is opened</Expected_result>
+  <Severity>Blocker</Severity>
+  <Priority>Medium</Priority>
+  <Environment>Windows 10 Pro x64 Version 10.0.19044 Build 19044, Google Chrome v.98.0.4758.102 x64</Environment>
+  <Reporter>Alex P</Reporter>
+  <Atachment>Picture</Atachment>
+</bug_report>
+
+# 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+# 38. Синхронизировать внешний и локальный репозиторий XML
+git pull
+
+#TXT
+# 1. Создать внешний репозиторий c названием TXT.
+
+# 2. Клонировать репозиторий TXT на локальный компьютер.
+
+# 3. Внутри локального TXT создать файл “new.txt”.
+
+# 4. Добавить файл под гит.
+
+# 5. Закоммитить файл.
+
+# 6. Отправить файл на внешний GitHub репозиторий.
+
+# 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+
+# 8. Отправить изменения на внешний репозиторий.
+
+# 9. Создать файл preferences.txt
+
+# 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+# 11. Создать файл skills.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+# 12. Сделать коммит в одну строку.
+# 13. Отправить сразу 2 файла на внешний репозиторий.
+# 14. На веб интерфейсе создать файл bug_report.txt.
+# 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+# 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+# 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+# 18. Синхронизировать внешний и локальный репозиторий TXT
